@@ -1,0 +1,4 @@
+Sitemap: http://workshopdevelopment.com/data/work.xml
+	
+User-agent: *
+Disallow: /none/ #all requests go to the index anyway

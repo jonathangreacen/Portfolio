@@ -1,0 +1,393 @@
+//Compile with SCSS
+$background_col:#f7f7f7;
+$graphic_trench_width:275px - 50px;
+$graphic_trench_color:#f2fef1;
+$column_divider_color:#b7e9f6;
+$content_margin_left:50px;
+$content_width:626px;
+$content_half_width:$content_width/2;
+$typeface_main:'Sorts Mill Goudy',Georgia, serif;
+$typeface_main_color:#4b4b4b;
+$solid_dark:#333333;
+$nav_height:30px;
+$nav_border_color:#dbdbdb;
+$link_color:#ff5948;
+
+@mixin vendor-prefix($name, $argument) {
+  #{$name}: $argument;
+  -webkit-#{$name}: $argument;
+  -ms-#{$name}: $argument;
+  -moz-#{$name}: $argument;
+  -o-#{$name}: $argument;
+}
+@import url(http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy:400,400italic);
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul,
+li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th,
+td {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+ 
+html, body{
+	background-color:$background_col;
+	margin:0px 0px 0px 0px;
+	padding:0px 0px 0px 0px;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	font-family:$typeface_main;
+	color:$typeface_main_color;
+}
+#site{
+	width:$content_width + $graphic_trench_width + $content_margin_left;
+	a, p, h3, h4, h5, h6{
+		::-moz-selection {background:#fff; color:#333;}
+		::selection{background:#fff; color:#333;}
+	}
+	height:100%;
+}
+#graphicTrench{
+	position:absolute;
+	float:left;
+	width:$graphic_trench_width;
+	height:100%;
+	background-color:$graphic_trench_color;
+	
+	#graphic{
+		position:absolute;
+		width:$graphic_trench_width;
+		height:100%;
+	}
+	#dropoff_shadow{
+		width:8px;
+		height:100%;
+		position:absolute;
+		background-image:url('../images/dropoff_shadow.png');
+		background-repeat:repeat-y;
+		border-right:1px solid $column_divider_color;
+		left:$graphic_trench_width - 8;
+	}
+}
+#right_column{
+	float:right;
+	position:relative;
+	height:100%;
+}
+#main{
+	header{
+		nav{
+			position:relative;
+			z-index:2;
+			width:100%;
+			height:$nav_height;
+			background-color:#FFFFFF;
+			border-bottom:1px solid $nav_border_color;		
+			
+			#nav_bottom{
+				position:absolute;
+				height:2px;
+				width:100%;
+				background-color:$solid_dark;
+				top:$nav_height + 0;
+				display:none;
+			}
+			#nav_contents{
+				width:100%;
+				position:absolute;		
+				bottom:0px;
+				height:auto;
+			}
+			#logo_small{
+				position:absolute;
+				height:100%;
+				display:none;
+			}
+			ul{
+				margin:0px;
+				padding:0px;
+				float:right;
+				margin:0px 0px 0px -4px;
+				li{
+					display:inline;
+					margin:0px 0px 0px -4px;					
+					a{
+						text-decoration:none;
+						color:$solid_dark;
+						border-right: 1px solid $nav_border_color;
+						padding:10px 10px 0px 10px;	
+						@include vendor-prefix(transition, (color .27s ease-out, background .20s ease-in));
+						
+						:hover{
+							color:$link_color;
+							cursor:pointer;
+						}
+					}	
+					.selected{					
+						color:#FFFFFF;
+						background-color:$solid_dark;
+						:hover{
+							color:#FFFFFF;
+						}
+					}				
+				}
+				
+			}
+			
+		}
+		#logo_large{
+			margin:102px 0px 18px 0px;
+			max-width:100%;
+			width:100%;
+			img{
+				width:100%;
+				max-width:100%;
+			}
+		}
+		#site_desc{
+			color:#7e7e7e;
+			font-size:1.1em;
+			width:100%;
+			text-align:center;
+			margin-bottom:26px;
+			
+			a{
+				color:$solid_dark;
+				text-decoration:none;
+				background-color:$background_col;
+				margin:0px;
+				padding: 0px 5px 0px 5px;
+				@include vendor-prefix(transition, (color .27s ease-out, background .20s ease-in));
+				cursor:pointer;
+			}
+			a:hover{
+				background-color:#843b84;
+				color:#FFFFFF;
+			}
+		}
+	}
+	section{
+		margin-bottom:33px;
+		
+		.hilighted{
+			background-color:#FCFCFC;
+		}
+		article{
+			padding-bottom:25px;
+			margin-bottom:0px;
+			padding-top:35px;
+			border-bottom:1px solid #ededed;
+			@include vendor-prefix(transition, (color .367s ease-out, background .27s ease-in));
+			width:$content_width;
+			
+			.image_preview{
+				width:$content_width - 20;
+				margin:10px 10px 10px 10px;
+				height:218px;
+				border:1px solid #dbdbdb;
+				background-color:#FFFFFF;
+				
+				img{
+					position:absolute;
+					opacity:1;
+					@include vendor-prefix(transition, opacity .25s ease-in-out);
+				}
+			}
+			.hgroup{
+				margin:0px 0px 10px 20px;
+				display:inline;
+				font-size:1.375em;
+				font-style:italic;
+				
+				.title{
+					color:#AAAAAA;
+					display:inherit;
+					margin-right:5px;
+				}
+				.summary{
+					color:$solid_dark;
+					display:inherit;
+				}
+			}
+			.description{
+				position:relative;
+				width:100%;
+				@include vendor-prefix(column-count, 2);
+			}
+			.sectionBody{ /* for html-formatted content */
+				position:relative;
+				width:100%;
+			}
+			p{
+				font-size:1em;
+				line-height:1.333em;
+				color:#686868;				
+				padding:0px 10px 15px 25px;
+				a{
+					color:$link_color;
+					background-color:#FFF;
+					text-decoration:none;
+					cursor:pointer;
+					:hover{
+						color:$link_color + #333333;
+					}
+				}
+			}
+			.link a{
+				background-color:$link_color;
+				color:#FFFFFF;
+				text-decoration:none;
+				margin:0px;
+				padding: 0px 5px 0px 5px;
+				
+				@include vendor-prefix(transition, (color .27s ease-out, background .20s ease-in));
+				:hover{
+					color:$link_color;
+					background-color:#FFF;
+				}
+			}
+			.info{
+				margin:20px 0px 0px 25px;
+				font-family:Helvectica,Arial,sans;
+				font-size:.8125em;
+				color:$typeface_main_color + #666666;
+				h5{
+					font-weight:bold;
+					display:inline-block;
+				}
+			}
+			.code{
+				font-family:'Courier New',Courier,monospace;
+			}
+		}
+	}
+}
+
+input, textarea{
+	font-size:1em;
+	color:#aaaaaa;
+	font-family:Arial,Helvetica,sans-serif;
+	border:1px solid $column_divider_color;
+	background-color:#FFFFFF;
+	padding:5px;
+	margin:5px;
+	@include vendor-prefix(border-radius,3px);
+	[type=text]:hover{ 
+		color:#787878;
+		background-color:#fffffe;  
+		border-color:$column_divider_color + #111111; 
+	}		
+	[type=text]:focus{
+		color:#555555;
+	}
+	.basic_text_input{
+		background-color:#FF0000;
+	}
+	[type=button]{
+		color:$column_divider_color - #666666;
+		background-color:$column_divider_color;  
+        border:3px solid #FFFFFF;
+		cursor:pointer;
+		font-weight:bold;
+		
+		:hover{
+			color:$solid_dark + #111111;
+		}
+		:active{
+			background-color:$column_divider_color - #222222;
+			color:#FFFFFF
+		}		
+	}
+}
+#formResult{
+	display:none;
+}
+
+$graphic_trench_width_small:0px;
+$nav_mobile_height:50px;
+/* Narrow browsers and iphone */
+@media only screen and (max-width:666px), only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+	#site{
+		width:100%;/*$content_width + $graphic_trench_width_small + $content_margin_left;*/
+		min-width:470px;
+	}
+	#graphicTrench{
+		width:$graphic_trench_width_small;
+		
+		#graphic{
+			position:absolute;
+			width:$graphic_trench_width_small;
+			height:100%;
+		}
+		#dropoff_shadow{
+			left:$graphic_trench_width_small - 8;
+		}
+	}
+	#right_column{
+		float:left;
+		position:inherit;
+	}
+	#main{
+		header{			
+			nav{
+				height:$nav_mobile_height;
+				#nav_bottom{
+					top:$nav_mobile_height;
+				}
+				#logo_small{
+					img{
+						position:relative;
+						top:33%;
+						left:10px;
+					}
+				}
+				ul{	
+					li{						
+						a{	
+							font-size:1.85em;			
+							padding:10px 5px 0px 10px;
+							
+						}
+					}
+				}
+			}
+		}
+		section{
+			margin:0px 0px;
+			padding:0px;
+			width:100%;
+			
+			article{
+				width:100%;
+				.image_preview{
+					max-width:100%;
+					width:100%;
+					margin:0px;
+					img{
+						max-width:100%;
+						width:100%;
+					}
+				}
+				.hgroup{ 
+					margin:0px 0px 20px 20px;
+					display:block;
+					font-size:1.85em;
+					h3{
+						font-size:1.5em;
+					}
+				}
+				.description{
+					position:relative;
+					width:100%;			
+					@include vendor-prefix(column-count, 1);
+				}
+				p{
+					font-size:1.357em;
+				}
+				.info{
+					font-size:1em;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,78 @@
+<data>
+	<WORK label="Work" application="js/WorkshopPortfolio.js">
+		<item color="#00C1F1">
+			<images>
+				<img src="content/sample1/Sample1_Image1.png"/>
+				<img src="content/sample1/Sample1_Image2.png"/>
+				<img src="content/sample1/Sample1_Image3.png"/>
+			</images>
+			<title>Project Title</title>
+			<summary>Project Summary</summary>
+			<description>
+				<p>Paragraphs are split between two columns automatically, to keep shorter line lengths, which are easier to read.</p>
+				<p>However when the site is sized to a single column in responsive view, these paragraphs automatically flow in a single column</p>
+				
+				<p class="link"><a href="http://www.google.com/" target="_blank">Preview the site</a></p>
+			</description>
+			<info type="Client:">A Great Client</info>
+			<info type="Agency:">A Helpful Agency</info>
+			<info type="Technology:">Many languages. Edit the 'type' value to anything you want</info>
+		</item>
+		<item color="#FF0000">
+			<images>
+				<img src="content/sample2/Sample2_Image1.png"/>
+				<img src="content/sample2/Sample2_Image2.png"/>
+				<img src="content/sample2/Sample2_Image3.png"/>
+				<img src="content/sample2/Sample2_Image4.png"/>
+			</images>
+			<title>Project Title</title>
+			<summary>Project Summary</summary>
+			<description>
+				<p>Paragraphs are split between two columns automatically, to keep shorter line lengths, which are easier to read.</p>
+				<p>However when the site is sized to a single column in responsive view, these paragraphs automatically flow in a single column</p>
+				
+				<p class="link"><a href="http://www.google.com/" target="_blank">Preview the site</a></p>
+			</description>
+			<info type="Client:">A Great Client</info>
+			<info type="Agency:">A Helpful Agency</info>
+			<info type="Amazin Coworkers:">Edit the 'type' value to anything you want</info>
+		</item>		
+	</WORK>
+	
+	<ABOUT label="About" application="">
+		<title color="#0099FF">Well Hello There</title>
+		<body>
+			<![CDATA[
+				<p>Talk about yourself a little bit</p>
+				<p>You can use HTML in here. It is an alternative to loading a .js file for a section. Name it whatever you want by changing the label attribute in the main node above</p>
+				<p>See how the application attribute is empty? That is how the Site knows to use this HTML instead.</p>
+			]]>
+		</body>
+	</ABOUT>
+	
+	<CODE label="Code" application="">
+		<title color="#333333">Git Your Code Here</title>
+		<body>
+			<![CDATA[
+				<p>You write great code, someone wants to talk to you!, this is how you make a link to another site section:
+						<a onclick="WORKSHOP.site.MAIN.launchSection('CONTACT')">Contact me</a>
+				</p>
+				
+				<p>If you want to make a normal link, just make a normal link: <a href="http://www.google.com">Click Me</a> </p>
+				
+			]]>
+		</body>
+	</CODE>
+	
+	<CONTACT label="Contact"  application="js/WorkshopContact.js">
+		<title color="#999999">Contact me</title>
+		<body>
+			<![CDATA[	
+				<p>
+					You can write a form directly into this area, or you can use/tweak the form submission micro-engine in the WorkshopContact.js file referenced in the application attribute above ^
+				</p>
+			]]>
+		</body>
+	</CONTACT>
+	
+</data>
