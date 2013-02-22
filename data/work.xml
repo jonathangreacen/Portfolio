@@ -66,13 +66,21 @@
 	
 	<CONTACT label="Contact"  application="js/WorkshopContact.js">
 		<title color="#999999">Contact me</title>
-		<body>
-			<![CDATA[	
-				<p>
-					You can write a form directly into this area, or you can use/tweak the form submission micro-engine in the WorkshopContact.js file referenced in the application attribute above ^
-				</p>
-			]]>
-		</body>
+		<config>
+			<body>I like to talk to people! What's better than hearing from someone new? Send me an email to say hi or talk some code.</body>
+			<contactName>Jonathan Greacen</contactName>
+			<contactEmail>contact@workshopdevelopment.com</contactEmail>
+			<formCollectionLocation>send.php</formCollectionLocation>
+			
+			<formHeader>Or let me save you a step:</formHeader>
+			<defaultEmailSubjectValue>Hello!</defaultEmailSubjectValue>
+			<defaultMessageBodyValue>I saw your site and...</defaultMessageBodyValue>
+			<defaultEmailValue>Your email</defaultEmailValue>
+			
+			<formSubmissionInvalid>Please enter a valid email address.</formSubmissionInvalid>
+			<formSubmissionSending>Sending your message...</formSubmissionSending>
+			<formSubmissionSent>Sent! Thanks for checking in.</formSubmissionSent>
+		</config>
 	</CONTACT>
 	
 </data>

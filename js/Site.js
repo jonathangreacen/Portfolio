@@ -243,10 +243,19 @@ WORKSHOP.site.MAIN = (function(doc, win){
 			function onPageReady(){
 				UTILS = WORKSHOP.utils.CORE;
 				UTILS.gaTrackingID = analyticsTrackingID;
+				removeSuperfluousBodyTag();
 				loadContents();
 				hilightNavCurrentSection();
 				graphicTrench = doc.getElementById('graphicTrench');
 				loadSectionGraphicAnimation();
+			};
+			function removeSuperfluousBodyTag(){
+				//Some browsers will add another <body> tag on page load. This removes the redundant/empty one
+				var html = doc.getElementsByTagName('html')[0],
+					bodies = doc.getElementsByTagName('body');				
+				if(bodies.length > 1){
+					html.removeChild( bodies[bodies.length - 1] );
+				};
 			};
 			function buildElement(elementName, attrs, parent, txt){
 				var ele = doc.createElement(elementName);
