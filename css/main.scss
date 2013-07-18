@@ -1,5 +1,5 @@
 //Compile with SCSS
-$background_col:#f7f7f7;
+$background_col:#F7F7F7;
 $graphic_trench_width:275px - 50px;
 $graphic_trench_color:#f2fef1;
 $column_divider_color:#b7e9f6;
@@ -9,7 +9,7 @@ $content_half_width:$content_width/2;
 $typeface_main:'Sorts Mill Goudy',Georgia, serif;
 $typeface_main_color:#4b4b4b;
 $solid_dark:#333333;
-$nav_height:30px;
+$nav_height:30px + 20px;
 $nav_border_color:#dbdbdb;
 $link_color:#ff5948;
 
@@ -20,6 +20,7 @@ $link_color:#ff5948;
   -moz-#{$name}: $argument;
   -o-#{$name}: $argument;
 }
+
 @import url(http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy:400,400italic);
 
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -40,9 +41,9 @@ html, body{
 }
 #site{
 	width:$content_width + $graphic_trench_width + $content_margin_left;
-	a, p, h3, h4, h5, h6{
-		::-moz-selection {background:#fff; color:#333;}
-		::selection{background:#fff; color:#333;}
+	a, p, h3, h4, h5, h6, strong, i, .code{
+		::-moz-selection {background:#FFFFCC; color:#333;}
+		::selection{background:#FFFFCC; color:#333;}
 	}
 	height:100%;
 }
@@ -70,10 +71,15 @@ html, body{
 }
 #right_column{
 	float:right;
+	/*height:100%;*/
+	min-height:100%;
 	position:relative;
-	height:100%;
+	/*left:225px*/;
 }
 #main{
+	/*height:auto;*/
+	padding-bottom:100px;//Height of footer
+	max-width:$content_width;
 	header{
 		nav{
 			position:relative;
@@ -81,7 +87,7 @@ html, body{
 			width:100%;
 			height:$nav_height;
 			background-color:#FFFFFF;
-			border-bottom:1px solid $nav_border_color;		
+			border-bottom:1px solid $nav_border_color;
 			
 			#nav_bottom{
 				position:absolute;
@@ -101,6 +107,7 @@ html, body{
 				position:absolute;
 				height:100%;
 				display:none;
+				padding-left:10px;
 			}
 			ul{
 				margin:0px;
@@ -109,19 +116,20 @@ html, body{
 				margin:0px 0px 0px -4px;
 				li{
 					display:inline;
-					margin:0px 0px 0px -4px;					
+					margin:0px 0px 0px -4px;	
+					cursor:pointer;				
 					a{
 						text-decoration:none;
 						color:$solid_dark;
 						border-right: 1px solid $nav_border_color;
-						padding:10px 10px 0px 10px;	
+						padding:50px 10px 0px 10px;	
 						@include vendor-prefix(transition, (color .27s ease-out, background .20s ease-in));
 						
-						:hover{
-							color:$link_color;
-							cursor:pointer;
-						}
+
 					}	
+					a:hover{
+						color:$link_color;
+					}
 					.selected{					
 						color:#FFFFFF;
 						background-color:$solid_dark;
@@ -132,7 +140,6 @@ html, body{
 				}
 				
 			}
-			
 		}
 		#logo_large{
 			margin:102px 0px 18px 0px;
@@ -167,7 +174,7 @@ html, body{
 	}
 	section{
 		margin-bottom:33px;
-		
+		height:100%;
 		.hilighted{
 			background-color:#FCFCFC;
 		}
@@ -178,7 +185,8 @@ html, body{
 			border-bottom:1px solid #ededed;
 			@include vendor-prefix(transition, (color .367s ease-out, background .27s ease-in));
 			width:$content_width;
-			
+			min-width:$content_width;
+
 			.image_preview{
 				width:$content_width - 20;
 				margin:10px 10px 10px 10px;
@@ -227,10 +235,11 @@ html, body{
 					background-color:#FFF;
 					text-decoration:none;
 					cursor:pointer;
-					:hover{
+
+				}
+				a:hover{
 						color:$link_color + #333333;
 					}
-				}
 			}
 			.link a{
 				background-color:$link_color;
@@ -240,10 +249,11 @@ html, body{
 				padding: 0px 5px 0px 5px;
 				
 				@include vendor-prefix(transition, (color .27s ease-out, background .20s ease-in));
-				:hover{
-					color:$link_color;
-					background-color:#FFF;
-				}
+
+			}
+			.link a:hover{
+				color:$link_color;
+				background-color:#FFF;
 			}
 			.info{
 				margin:20px 0px 0px 25px;
@@ -259,6 +269,22 @@ html, body{
 				font-family:'Courier New',Courier,monospace;
 			}
 		}
+	}
+}
+footer{
+	position:absolute;
+	bottom:0px;
+	width:100%;
+	height:100px;
+	text-align:right;	
+	background-color:#FFFFFF;
+	border-top:1px solid #ededed;
+	
+	p{
+		font-family:Arial,Helvetica,sans-serif;
+		font-size:.666em;
+		color:#cacaca;
+		margin:10px;
 	}
 }
 
@@ -295,21 +321,22 @@ input, textarea{
 		:active{
 			background-color:$column_divider_color - #222222;
 			color:#FFFFFF
-		}		
+		}
 	}
+
 }
 #formResult{
 	display:none;
 }
 
 $graphic_trench_width_small:0px;
-$nav_mobile_height:50px;
+$nav_mobile_height:75px;
 /* Narrow browsers and iphone */
 @media only screen and (max-width:666px), only screen and (-webkit-min-device-pixel-ratio : 1.5),
 only screen and (min-device-pixel-ratio : 1.5) {
 	#site{
-		width:100%;/*$content_width + $graphic_trench_width_small + $content_margin_left;*/
-		min-width:470px;
+		width:100%;
+		min-width:565px;
 	}
 	#graphicTrench{
 		width:$graphic_trench_width_small;
@@ -325,9 +352,10 @@ only screen and (min-device-pixel-ratio : 1.5) {
 	}
 	#right_column{
 		float:left;
-		position:inherit;
 	}
 	#main{
+		max-width:100%;
+		min-width:100%;
 		header{			
 			nav{
 				height:$nav_mobile_height;
@@ -335,18 +363,17 @@ only screen and (min-device-pixel-ratio : 1.5) {
 					top:$nav_mobile_height;
 				}
 				#logo_small{
+					padding-left:6px;
 					img{
 						position:relative;
 						top:33%;
-						left:10px;
 					}
 				}
 				ul{	
-					li{						
+					li{				
 						a{	
-							font-size:1.85em;			
-							padding:10px 5px 0px 10px;
-							
+							font-size:36px;
+							padding:50px 10px 0px 10px;					
 						}
 					}
 				}
@@ -356,7 +383,8 @@ only screen and (min-device-pixel-ratio : 1.5) {
 			margin:0px 0px;
 			padding:0px;
 			width:100%;
-			
+			min-width:100%;
+
 			article{
 				width:100%;
 				.image_preview{
@@ -382,7 +410,7 @@ only screen and (min-device-pixel-ratio : 1.5) {
 					@include vendor-prefix(column-count, 1);
 				}
 				p{
-					font-size:1.357em;
+					font-size:1.357em + .5em;
 				}
 				.info{
 					font-size:1em;

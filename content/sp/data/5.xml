@@ -1,0 +1,58 @@
+<people>
+  <person uid="fivefunfcinq@signalpaterns.com_1">
+    <factors>
+      <factor value="45" id="1"/>
+      <factor value="31" id="2"/>
+      <factor value="84" id="3"/>
+      <factor value="73" id="4"/>
+      <factor value="75" id="5"/>
+    </factors>
+    <facets>
+      <facet value="13" id="1"/>
+      <facet value="26" id="2"/>
+      <facet value="86" id="3"/>
+      <facet value="81" id="4"/>
+      <facet value="69" id="5"/>
+      <facet value="20" id="6"/>
+      <facet value="13" id="7"/>
+      <facet value="63" id="8"/>
+      <facet value="23" id="9"/>
+      <facet value="20" id="10"/>
+      <facet value="32" id="11"/>
+      <facet value="57" id="12"/>
+      <facet value="44" id="13"/>
+      <facet value="20" id="14"/>
+      <facet value="32" id="15"/>
+      <facet value="81" id="16"/>
+      <facet value="100" id="17"/>
+      <facet value="81" id="18"/>
+      <facet value="88" id="19"/>
+      <facet value="88" id="20"/>
+      <facet value="81" id="21"/>
+      <facet value="75" id="22"/>
+      <facet value="84" id="23"/>
+      <facet value="32" id="24"/>
+      <facet value="100" id="25"/>
+      <facet value="82" id="26"/>
+      <facet value="69" id="27"/>
+      <facet value="81" id="28"/>
+      <facet value="69" id="29"/>
+      <facet value="81" id="30"/>
+      <facet value="81" id="31"/>
+      <facet value="88" id="32"/>
+      <facet value="88" id="33"/>
+      <facet value="81" id="34"/>
+      <facet value="26" id="35"/>
+      <facet value="20" id="36"/>
+      <facet value="32" id="37"/>
+      <facet value="88" id="38"/>
+      <facet value="75" id="39"/>
+      <facet value="69" id="40"/>
+      <facet value="94" id="41"/>
+      <facet value="85" id="42"/>
+      <facet value="20" id="43"/>
+      <facet value="75" id="44"/>
+      <facet value="32" id="45"/>
+    </facets>
+  </person>
+</people>

@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<style type="text/css" media="screen">
+			html, body {
+			margin:10;
+			padding:10;
+			height:100%; 
+			width:100%;
+			background-color:#FFFFFF;
+		} 
+		</style>
+    <script type="text/javascript">		
+      var viewStates                = new Object();
+          viewStates.VIEW_FEEDBACK  = "FeedbackView";
+          viewStates.VIEW_TWEAK     = "TweakView";
+          viewStates.VIEW_COMPARE   = "CompareView";
+          viewStates.VIEW_FACTORS   = "FactorView";
+          viewStates.VIEW_ZOOM      = "ZoomView";
+          viewStates.VIEW_DEFAULT   = viewStates.VIEW_FEEDBACK;
+          
+          function callView(view, uid){          
+    				if(navigator.appName.indexOf("Microsoft") != -1){
+  				  	SPDisplay.callView(view, uid);
+  			    }else{
+  				  	window.document.SPDisplay.callView(view, uid);
+  				  }
+             //usage xample callView(viewStates.VIEW_FACTORS)
+               //compare view can be called via another function by UID
+               //or the UID can be added as an optional argument to this function
+          }
+    </script> 	
+		<title>Signal Patterns - Greacen for Bond Art + Science</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />	
+		<script type="text/javascript" src="swfobject_1.js"></script>
+
+	</head>
+
+	<body>
+		<div id="sp"></div>
+		 <script type="text/javascript">
+		 
+			var so = new SWFObject("signalPatterns_01.swf", "SPDisplay", 900, 614, "9.0.0", "#FFFFFF");
+				so.addParam("allowNetworkAccess", "always");
+				so.addParam("allowScriptAccess", "always");
+				so.addParam("menu","false");
+				so.addParam("scale", "noscale");
+       // so.addVariable("myUID", "333");
+       // so.addVariable('baseResultRequestPage', "data/sampleResults100_5.xml");
+       // so.addVariable("dictionaryURL", "data/updated_dictionary.xml")
+				so.write("sp");
+		</script>
+
+
+
+
+
+
+
+		
+		<!--
+		<div id="externalControls">
+      <form name="testForm">
+    		  <input type="button"
+                value="View my results" onclick="callView(viewStates.VIEW_FEEDBACK, '')" />
+            <br/>
+          <input type="button"
+                value="Tweak my results" onclick="callView(viewStates.VIEW_TWEAK, null)" />
+            <br/>
+          <input type="button"
+                value="View my factor averages" onclick="callView(viewStates.VIEW_FACTORS, null)" />
+            <br/>
+            
+          <input type="text" size="10" value="UID" name="CompareUserUID"></input>
+          <input type="button"
+                value="Click Here to compare a user to me" onclick="callView(viewStates.VIEW_COMPARE, document.testForm.CompareUserUID.value)" />
+        </form>          
+		</div>
+		-->
+	</body>
+</html>

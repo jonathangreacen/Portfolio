@@ -74,7 +74,7 @@ WORKSHOP.site.sections.CONTACT = (function (UTILS, _doc, _win){
 	function clearText(e){
 		var obj = e.target,
 			txt = obj.value;
-		if(txt = obj.description){
+		if(txt === obj.description){
 			obj.value = '';					
 			obj.onfocusout = obj.onblur = putTextBack;
 		}
@@ -134,4 +134,4 @@ WORKSHOP.site.sections.CONTACT = (function (UTILS, _doc, _win){
 	init();
 	return me;
 	
-}(WORKSHOP.utils.CORE, document, window));
+})(WORKSHOP.utils.CORE, document, window);

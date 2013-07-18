@@ -1,0 +1,337 @@
+<dictionary survey_id="11">
+
+  <factors>
+    <factor id="1">
+      <label>extraversion</label>
+    </factor>
+    <factor id="2">
+      <label>agreeableness</label>
+    </factor>
+    <factor id="3">
+      <label>conscientiousness</label>
+    </factor>
+    <factor id="4">
+      <label>emotional stability</label>
+    </factor>
+    <factor id="5">
+      <label>intellect</label>
+    </factor>
+  </factors>
+  <facets>
+    <facet id="1">
+      <positive_label>Extroverted</positive_label>
+      <negative_label>Reserved</negative_label>
+      <positive_text>... you are ready to talk at the drop of a hat. You're bound to be talking to someone wherever you are;at a party, in the office, or on the phone.</positive_text>
+      <negative_text>... you are somewhat shy, or at least unwilling to spend all your time socializing. With you it's true that "still waters run deep," which is why most people never get to know you well.</negative_text>
+      <factor>I</factor>
+    </facet>
+    <facet id="2">
+      <positive_label>Friendly</positive_label>
+      <negative_label>Solitary</negative_label>
+      <positive_text>... you would far rather hang out with friends than spend time alone, and you'd far rather be doing something with those friends than just sitting around. You're happy in a crowded room, club, stadium, or auditorium.</positive_text>
+      <negative_text>... you are a private person, often ill at ease in a group, and view excessive socializing as a waste of time.</negative_text>
+      <factor>I</factor>
+    </facet>
+    <facet id="3">
+      <positive_label>Authoritative</positive_label>
+      <negative_label>Acquiescent</negative_label>
+      <positive_text>... you have found that others will often do what you want them to do, without significantly pushing back. You've also discovered that many people will accept harsher criticism from you than they would take from anyone else.</positive_text>
+      <negative_text>... you don't like to throw your weight around. In general, you'd rather be the one who is told what to do than the one who's doing the telling. You often choose to avoid confrontations even if it means that you won't get your way. "Pushy" is not a word that anyone would use to describe you..</negative_text>
+      <factor>I</factor>
+    </facet>
+    <facet id="4">
+      <positive_label>Assertive</positive_label>
+      <negative_label>Laid Back</negative_label>
+      <positive_text>... you behave in a confident and forceful manner, take charge of the situation, raise your hand in class, stand up for what you think is right, and lead others.</positive_text>
+      <negative_text>... you are not interested in being in charge, or in doing what it takes to be in charge. You prefer to fade into the woodwork, take your sweet time, and focus on the job at hand.</negative_text>
+      <factor>I</factor>
+    </facet>
+    <facet id="5">
+      <positive_label>Accessible</positive_label>
+      <negative_label>Private</negative_label>
+      <positive_text>... you're a free spirit; you're comfortable expressing yourself in words and actions, with no self-censorship. You believe that if someone doesn't like what they see it's their problem, not yours.  </positive_text>
+      <negative_text>... you don't see the need to share what you're thinking and feeling with everyone in the world. Except with your most intimate friends and family members, you tend to present yourself in a somewhat formal way in order to keep your inmost thoughts to yourself.</negative_text>
+      <factor>I</factor>
+    </facet>
+    <facet id="6">
+      <positive_label>Poised</positive_label>
+      <negative_label>Unsettled</negative_label>
+      <positive_text>... you tend to feel at home wherever you find yourself, even in unfamiliar settings, with new people. It takes a lot to rattle you, and when rattled you recover quickly and gracefully.</positive_text>
+      <negative_text>... you may be comfortable on you home turf, but you tend to be self-conscious, even nervous, when you're in an unfamiliar environment. And, while you're at ease with your friends, you can be quite ill at ease with strangers..</negative_text>
+      <factor>I</factor>
+    </facet>
+    <facet id="7">
+      <positive_label>Outspoken</positive_label>
+      <negative_label>Discreet</negative_label>
+      <positive_text>... you like to talk. Luckily, you always have something to say, you tell a good story, and people generally enjoy listening to you. It's no wonder that you're often the center of attention.</positive_text>
+      <negative_text>... you don't talk all that much, and when you do talk you don't shout. You tend to hold onto your thoughts until you have something important to say, and even then you're not comfortable imposing your ideas on others.</negative_text>
+      <factor>I</factor>
+    </facet>
+    <facet id="8">
+      <positive_label>Captivating</positive_label>
+      <negative_label>Self-Contained</negative_label>
+      <positive_text>... you have a gift for organizing, motivating, and inspiring people. You don't shy away from making decisions; in fact, you thrive on it. When faced with a challenge, you know how to marshal your forces to meet your goal.</positive_text>
+      <negative_text>... you don't see any reason to tell everyone what you think, or to try to get others to think the way you do, and you certainly don't need to boss people around. You're perfectly fine sticking to your own business and leaving the power struggles to others.</negative_text>
+      <factor>I</factor>
+    </facet>
+    <facet id="9">
+      <positive_label>Warm</positive_label>
+      <negative_label>Frank</negative_label>
+      <positive_text>... you have a genuine interest in other people. You're a natural host, and are always thinking about how you can increase the happiness of those around you. When friends have problems or are in trouble, you're usually the first person they turn to for aid and comfort.</positive_text>
+      <negative_text>... you don't need constant reassurance, and you don't see why anyone else should. Nor do you understand why some people need to be treated as if they're delicate little babies. You say what you think, directly, and it's not your problem if people can't handle it.</negative_text>
+      <factor>II</factor>
+    </facet>
+    <facet id="10">
+      <positive_label>Cooperative</positive_label>
+      <negative_label>Competitive</negative_label>
+      <positive_text>... you enjoy teamwork, play well with others, and prefer cooperation to competition.</positive_text>
+      <negative_text>... you'd rather compete than cooperate in many situations. When you know you're right, you would rather argue your point than compromise.</negative_text>
+      <factor>II</factor>
+    </facet>
+    <facet id="11">
+      <positive_label>Understanding</positive_label>
+      <negative_label>Critical</negative_label>
+      <positive_text>... you are willing to take the time to find out what's going on with other people, especially if they're in distress. You're a good listener, you don't criticize, and you offer unbiased, respectful, honest advice when it's requested.</positive_text>
+      <negative_text>... you have extremely high standards, and aren't shy about it. When you encounter someone who doesn't meet your standards, you don't hesitate to tell them. Some may feel that you are cruel, but "the truth hurts," and you feel you're just the messenger.</negative_text>
+      <factor>II</factor>
+    </facet>
+    <facet id="12">
+      <positive_label>Scrupulous</positive_label>
+      <negative_label>Ambitious</negative_label>
+      <positive_text>... you are an honest, fair person. You don't lie or cheat to get ahead. You treat others with respect and hope for the same in return.</positive_text>
+      <negative_text>... you feel that the rules followed by most people do not necessarily apply to you. In this dog-eat-dog world, you are willing to do what it takes to get ahead, even if it sometimes means stepping on others' toes.</negative_text>
+      <factor>II</factor>
+    </facet>
+    <facet id="13">
+      <positive_label>Upbeat</positive_label>
+      <negative_label>Abrasive</negative_label>
+      <positive_text>... you enjoy being around others and others enjoy being around you. You have a "live and let live" attitude; because you know that no one's perfect, you are forgiving and happy to give the benefit of the doubt.</positive_text>
+      <negative_text>... you don't feel the need to suppress your opinions; in fact, you sometimes go out of your way to express yourself. It seems wrong to simply "go along"; it's fine with you if you're sometimes controversial. Rubbing people the wrong way is, for you, what happens when say what you think.</negative_text>
+      <factor>II</factor>
+    </facet>
+    <facet id="14">
+      <positive_label>Tender</positive_label>
+      <negative_label>Unsentimental</negative_label>
+      <positive_text>... you are gentle with others, both physically and emotionally. You are careful not to upset people and go out of your way to find the nicest way to say something. You naturally focus on the fact that the world is full of wonderful people, places, and things.</positive_text>
+      <negative_text>... you are tough-minded; you don't let sentimental thinking keep you from seeing, and speaking, the truth. You don't let your feelings, and the feelings of others, prevent you from making rational decisions.</negative_text>
+      <factor>II</factor>
+    </facet>
+    <facet id="15">
+      <positive_label>Empathetic</positive_label>
+      <negative_label>Self-Attuned</negative_label>
+      <positive_text>... you are in touch with your own feelings, which helps put you in touch with the feelings of others.</positive_text>
+      <negative_text>... you feel that unless you're happy you're incapable of making anyone else happy. Therefore, you'll do what it takes to make sure that you have what you need, and until then others will just have to wait.</negative_text>
+      <factor>II</factor>
+    </facet>
+    <facet id="16">
+      <positive_label>Efficient</positive_label>
+      <negative_label>Inefficient</negative_label>
+      <positive_text>... you are very well organized, even a bit anal. You like to stick to your plans and finish on time, wasting as little time as possible in the process.</positive_text>
+      <negative_text>... you are not a planner, and when you do have a plan you're happy to ignore it. You're also a first-class procrastinator, a genius at finding ways to waste time instead of getting down to business.</negative_text>
+      <factor>III</factor>
+    </facet>
+    <facet id="17">
+      <positive_label>Cautious</positive_label>
+      <negative_label>Impulsive</negative_label>
+      <positive_text>... you very rarely make a move without first considering the pros and cons and, therefore, rarely do anything foolish or extravagant.</positive_text>
+      <negative_text>... you can be impulsive; you sometimes act before you think and, therefore, may end up doing things you later regret.</negative_text>
+      <factor>III</factor>
+    </facet>
+    <facet id="18">
+      <positive_label>Responsible</positive_label>
+      <negative_label>Free-Spirited</negative_label>
+      <positive_text>... you fulfill your obligations and responsibilities, are true to your word, and generally obey the rules.</positive_text>
+      <negative_text>... you're not opposed to making hasty decisions. You don't always color within the lines. You sometimes feel that the rules were written for others, not for you.</negative_text>
+      <factor>III</factor>
+    </facet>
+    <facet id="19">
+      <positive_label>Conscientious</positive_label>
+      <negative_label>Slapdash</negative_label>
+      <positive_text>... you feel it's important to work according to a plan and finish every task;to do things correctly and thoroughly.</positive_text>
+      <negative_text>... you don't necessarily believe that everything must go according to plan, or that it's necessary to be an expert. You've been known to abandon a project in which you've lost interest.</negative_text>
+      <factor>III</factor>
+    </facet>
+    <facet id="20">
+      <positive_label>Focused</positive_label>
+      <negative_label>Distracted</negative_label>
+      <positive_text>... you know how to lock in on what's important. You quickly prepare yourself for a task, you don't procrastinate, and you don't let up until the job is done to your satisfaction.</positive_text>
+      <negative_text>... you can be a little scattered. It may take you a while to sit down and start a job, you're likely to lose track of what you're doing along the way, and it might require a tremendous act of will to keep at it until the job is done.</negative_text>
+      <factor>III</factor>
+    </facet>
+    <facet id="21">
+      <positive_label>Organized</positive_label>
+      <negative_label>Instinctive</negative_label>
+      <positive_text>... you like to think a task through before you embark on it. If it's the slightest bit complicated, you make a list (even if it's only in your mind) and methodically work your way through it. When you have a goal in mind, you're not satisfied until you reach it.</positive_text>
+      <negative_text>... you don't feel the need to map things out ahead of time or spend endless hours in the pursuit of "excellence." From your perspective, obsessing over the details is for those who don't have anything better to do with their time.</negative_text>
+      <factor>III</factor>
+    </facet>
+    <facet id="22">
+      <positive_label>Optimistic</positive_label>
+      <negative_label>Pessimistic</negative_label>
+      <positive_text>... you are a "glass half-full" kind of person, always on the lookout for the silver lining. Your happiness is contagious, which is why others like to be around you.</positive_text>
+      <negative_text>... you tend to be a "glass half-empty" kind of person, which for you is simpy a realistic outlook. Your feeling is that this world can be a depressing place, and only a fool would feel otherwise.</negative_text>
+      <factor>IV</factor>
+    </facet>
+    <facet id="23">
+      <positive_label>Prudent</positive_label>
+      <negative_label>Rash</negative_label>
+      <positive_text>... you look before you leap, think before you act, consider what you're about to say before you open your mouth to speak;which is why you rarely have to eat your words.</positive_text>
+      <negative_text>... you get excited easily, allow yourself to react without censoring your feelings, and sometimes blurt out the first thing that comes to mind without considering the consequences.</negative_text>
+      <factor>IV</factor>
+    </facet>
+    <facet id="24">
+      <positive_label>Calm</positive_label>
+      <negative_label>Impassioned</negative_label>
+      <positive_text>... you rarely become irritated, generally accept people as they are, take things as they come, and feel relaxed in most situations.</positive_text>
+      <negative_text>... you are easily annoyed, quick to snap at those around you, and, occasionally, fly off the handle with little provocation.</negative_text>
+      <factor>IV</factor>
+    </facet>
+    <facet id="25">
+      <positive_label>Unflappable</positive_label>
+      <negative_label>Emotional</negative_label>
+      <positive_text>... you are not a slave to your emotions. It takes a lot to upset or unnerve you. That's why you're a good person to have around in a crisis.</positive_text>
+      <negative_text>... you don't bottle up what you're feeling; those around you usually know what you're going through. This may not be so good in a crisis, as you tend to get swept up in the emotions of the moment.</negative_text>
+      <factor>IV</factor>
+    </facet>
+    <facet id="26">
+      <positive_label>Steady</positive_label>
+      <negative_label>Volatile</negative_label>
+      <positive_text>... you are a reasonable kind of person; no one would describe you as a loose cannon. Even when everyone around you is losing it, you can be counted on to keep your cool and offer calm guidance.</positive_text>
+      <negative_text>... you do not keep your emotions to yourself. Whether you're happy or sad, you show it; when something upsets you, or you're feeling stressed out, those around you will know it right away.</negative_text>
+      <factor>IV</factor>
+    </facet>
+    <facet id="27">
+      <positive_label>Centered</positive_label>
+      <negative_label>Passionate</negative_label>
+      <positive_text>... you often feel balanced and on top of things, even when those around you are freaking out. You're in a pretty good state all the time, and not subject to drastic mood swings.</positive_text>
+      <negative_text>... you are in touch with your emotions;sometimes to a fault. You often react before you think, which is honest but, occasionally, a menace to yourself and others. The good news: you don't tamp down your emotions. The bad news: you're ruled by your emotions.</negative_text>
+      <factor>IV</factor>
+    </facet>
+    <facet id="28">
+      <positive_label>Innovative</positive_label>
+      <negative_label>Utilitarian</negative_label>
+      <positive_text>... you come up with a lot of ideas; if one doesn't work out, there's always another waiting in the wings. You often have interesting solutions to difficult problems. You're practically a one-person brainstorming session.</positive_text>
+      <negative_text>... you are less interested changing the world than in dealing with things as they are. Unlike those who spend all their time trying to solve problems, you prefer to zero in on things that work and stick with them.</negative_text>
+      <factor>V</factor>
+    </facet>
+    <facet id="29">
+      <positive_label>Introspective</positive_label>
+      <negative_label>Outgoing </negative_label>
+      <positive_text>... you like your own company; you're a very interesting person. Tracking your own mental processes, knowing what you're thinking and why you do what you do, is important to you. Often, what's going on in your mind is more compelling than what's going on outside.</positive_text>
+      <negative_text>... you have little interest in tracking the activities of your own mind. Your thoughts are not all that interesting when you're all alone. You think it's  a waste of time to question why you do the things you do.</negative_text>
+      <factor>V</factor>
+    </facet>
+    <facet id="30">
+      <positive_label>Aesthetic</positive_label>
+      <negative_label>Down-to-Earth</negative_label>
+      <positive_text>... you appreciate art, beauty, and design; you know that they are not superficial but absolutely crucial to living the good life. You have good taste, and you're proud of it.</positive_text>
+      <negative_text>... you are not one of those people who is "moved" by art, and you think that many of those who claim to love art are just pretentious. As long as something does the job;whether it be a couch, a coat, or a kitchen cabinet;it's "beautiful" as far as you're concerned.</negative_text>
+      <factor>V</factor>
+    </facet>
+    <facet id="31">
+      <positive_label>Creative</positive_label>
+      <negative_label>Literal</negative_label>
+      <positive_text>... you are good at solving problems, coming up with original ideas, and seeing connections between things;connections that most other people miss.</positive_text>
+      <negative_text>... you are less interested in abstractions than in the concrete. You're more comfortable talking about things that you know are tangible and real than in speculating about concepts.</negative_text>
+      <factor>V</factor>
+    </facet>
+    <facet id="32">
+      <positive_label>Competent</positive_label>
+      <negative_label>Easygoing</negative_label>
+      <positive_text>... you strive to master everything you undertake. You tend to learn quickly and do not shy away from challenges.</positive_text>
+      <negative_text>... you move at your own pace and may take quite a while to master a new skill. You don't always see the point of laboring over a task or living up to others' expectations; you never set out to be the world's best whatever.</negative_text>
+      <factor>V</factor>
+    </facet>
+    <facet id="33">
+      <positive_label>Astute</positive_label>
+      <negative_label>Perplexed</negative_label>
+      <positive_text>... you are a quick study. You generally don't need to have things explained to you more than once. When presented with a problem, you will often have an instant understanding of where to look for the solution.</positive_text>
+      <negative_text>... you often need to take your time when presented with a new task to complete or problem to solve. This can lead you to avoid certain types of assignments or situations, especially those that require you to learn new skills.</negative_text>
+      <factor>V</factor>
+    </facet>
+    <facet id="34">
+      <positive_label>Intellectual</positive_label>
+      <negative_label>Preoccupied</negative_label>
+      <positive_text>... you are thoughtful, rational, and comfortable in the world of ideas. People find you interesting to talk to. You're the living embodiment of the saying "You learn something new every day."</positive_text>
+      <negative_text>... you are not a big fan of abstract conversation, of discussing everything to death. You'd far rather stick with what you know than waste time experimenting with new ideas and studying new things.</negative_text>
+      <factor>V</factor>
+    </facet>
+    <facet id="35">
+      <positive_label>Sociable</positive_label>
+      <negative_label>Independent</negative_label>
+      <positive_text>... you are a people person. You're much more likely to be found in the middle of a crowd than home alone. When there's a good time to be had, you're likely to be having it.</positive_text>
+      <negative_text>... you are comfortable being by yourself, and would often rather be alone than, say, in a crowded club. You don't generally succumb to group pressure unless the group wants to do the same thing that you want to do.</negative_text>
+      <factor>I</factor>
+    </facet>
+    <facet id="36">
+      <positive_label>Sympathetic</positive_label>
+      <negative_label>Pragmatic</negative_label>
+      <positive_text>... you have a knack for knowing what's going on in the hearts and minds of those around you, without their having to tell you explicitly. People tend to turn to you with their problems because they know you care and will likely offer good advice and a helping hand.</positive_text>
+      <negative_text>... you do not obsess about what others are thinking or feeling; if they want you to know something, you figure, they'll just come out and tell you. In any case, you've found that people with sad stories are usually looking for attention or have brought their problems upon themselves.</negative_text>
+      <factor>II</factor>
+    </facet>
+    <facet id="37">
+      <positive_label>Giving</positive_label>
+      <negative_label>Irritable</negative_label>
+      <positive_text>... you enjoy helping others, lending a hand, providing emotional or material sustenance. You don't see taking care of others as an imposition but as a vital and important part of your life.</positive_text>
+      <negative_text>... you have little patience for people who need help, and little sympathy for those whose fragile egos can't stand a little pressure. Lending a hand, you feel, often takes valuable time from what's important to you, and treating people too gently only insulates them from the harsh realities of life.</negative_text>
+      <factor>II</factor>
+    </facet>
+    <facet id="38">
+      <positive_label>Rational</positive_label>
+      <negative_label>Arbitrary</negative_label>
+      <positive_text>... you see the world clearly and objectively. You know there's a logical explanation for everything, and a logical solution to every problem;which is why you're such a good problem-solver.</positive_text>
+      <negative_text>... you don't see the need to get ultra-logical about everything. As far as you're concerned, life can be fairly random, and trying to impose a tight little grid on it is a waste of time. Your conclusion: relax. Things will work out. Or not.</negative_text>
+      <factor>III</factor>
+    </facet>
+    <facet id="39">
+      <positive_label>Meticulous</positive_label>
+      <negative_label>Carefree</negative_label>
+      <positive_text>... you have a tendency to want everything you touch to be just right. You can spot errors, omissions, shoddy work, or bad taste from a mile away. You demand a lot of yourself, and you often hold others to the same standards.</positive_text>
+      <negative_text>... you don't demand perfection. The world isn't flawless and you don't feel the need to pretend that you can make it flawless in your own little way. Therefore, you don't examine everything with a microscope and are comfortable cutting yourself and others a lot of slack.</negative_text>
+      <factor>III</factor>
+    </facet>
+    <facet id="40">
+      <positive_label>Buttoned-Down</positive_label>
+      <negative_label>Loose</negative_label>
+      <positive_text>... you like to know that everything is in its place; it's somehow empowering to know that the world around you is neat and organized. For you, schedules and timelines are great ways to stay on track, and mowing down the items on your "to do" list is a source of happiness.  </positive_text>
+      <negative_text>... you feel that a clean, orderly desk is the sign of a person who doesn't have enough to do. Schedules and "to do" lists feel stifling; you thrive on a sense of personal anarchy and don't feel compelled to clean up after finishing a job.</negative_text>
+      <factor>III</factor>
+    </facet>
+    <facet id="41">
+      <positive_label>Levelheaded</positive_label>
+      <negative_label>Reckless</negative_label>
+      <positive_text>... you are good at resisting temptation and rarely overindulge. In fact, you tend to avoid any kind of extreme behavior and rarely find yourself having to apologize for something you did or said.</positive_text>
+      <negative_text>... you have a tendency to give in to your impulses, to indulge your cravings. Rather than fight your emotions, you often do what comes naturally, which means occasionally overdoing it and, perhaps, embarrassing yourself.</negative_text>
+      <factor>IV</factor>
+    </facet>
+    <facet id="42">
+      <positive_label>Resilient</positive_label>
+      <negative_label>Stressed Out</negative_label>
+      <positive_text>... you bounce back quickly from adversity. For you, all setbacks are temporary. You don't dwell on bad news, bad luck, or criticism; you regroup and focus on solving the problem, whatever it may be.</positive_text>
+      <negative_text>... you often feel that there's too much on your plate, that you don't have the psychological or physical strength to deal with the bad hand you've been dealt, that you're going to lose it if you have to deal with one more problem.</negative_text>
+      <factor>IV</factor>
+    </facet>
+    <facet id="43">
+      <positive_label>Cool-Headed</positive_label>
+      <negative_label>Excitable</negative_label>
+      <positive_text>... you stay cool under pressure. When the world around you is erupting in chaos, you're the one who keeps it together. </positive_text>
+      <negative_text>... you have a strong image of how you want things to be, and when the world around you refuses to cooperate it can be annoying, distracting, or worse.</negative_text>
+      <factor>IV</factor>
+    </facet>
+    <facet id="44">
+      <positive_label>Original</positive_label>
+      <negative_label>Traditional</negative_label>
+      <positive_text>... you are constantly coming up with new ideas. For you, the world as it exists is just a jumping-off place; what's going on inside your mind is often more interesting than what's going on outside.</positive_text>
+      <negative_text>... you don't waste your time trying to "express yourself" or constantly coming up with new ideas. The world is just the way it is, you feel, and the road to success is to be a realist and stick to the program.</negative_text>
+      <factor>V</factor>
+    </facet>
+    <facet id="45">
+      <positive_label>Curious</positive_label>
+      <negative_label>Realistic</negative_label>
+      <positive_text>... you like to get to the bottom of things. You're not content knowing what someone did; you want to know why they did it.</positive_text>
+      <negative_text>... you feel that it can be a waste of time to attempt to find "hidden meanings," to dig beneath the surface of everything. For you, it's much more efficient to take things as they are and move on.</negative_text>
+      <factor>V</factor>
+    </facet>
+  </facets>
+</dictionary>

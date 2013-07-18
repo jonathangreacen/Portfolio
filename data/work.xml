@@ -1,71 +1,266 @@
 <data>
-	<WORK label="Work" application="js/WorkshopPortfolio.js">
+	<WORK label="Work" application="js/WorkshopPortfolio.js" visualization="vis/universe.js">
+		<item color="#135db8">
+			<images>
+				<img src="content/dg/NewsTrends01.jpg"/>
+				<img src="content/dg/NewsTrends02.jpg"/>
+				<img src="content/dg/NewsTrends03.jpg"/>
+			</images>
+			<title>News Trends</title>
+			<summary>Large-screen lobby display</summary>
+			<description>
+				<p>This project displays the currently trending news stories culled from feeds of top news services. Results are grouped according to topic category.</p>
+				<p>The grid layout is randomized and priority of the news story determines the size box it displays in.</p>
+				<p>The design is configurable by changing basic property values. View two layouts of the same code below.</p>
+
+				
+				<p class="link"><a href="http://dg.workshopdevelopment.com/sketches/newsTrends" target="_blank">View project with design 1</a></p>
+				<p class="link"><a href="http://dg.workshopdevelopment.com/sketches/newsTrends/5" target="_blank">View project with design 2</a></p>
+			</description>
+			<info type="Client:">Edelman</info>
+			<info type="Company:">Dachis Group</info>
+			<info type="Technology:">Javascript, CSS3, HTML5</info>
+		</item>
+
 		<item color="#00C1F1">
 			<images>
-				<img src="content/sample1/Sample1_Image1.png"/>
-				<img src="content/sample1/Sample1_Image2.png"/>
-				<img src="content/sample1/Sample1_Image3.png"/>
+				<img src="content/dg/DachisGroup_IndexAreaGraph.png"/>
+				<img src="content/dg/DachisGroup_SBG.png"/>
+				<img src="content/dg/DachisGroup_misc.png"/>
 			</images>
-			<title>Project Title</title>
-			<summary>Project Summary</summary>
+			<title>Social Business Index</title>
+			<summary>Interactive graphs and charts</summary>
 			<description>
-				<p>Paragraphs are split between two columns automatically, to keep shorter line lengths, which are easier to read.</p>
-				<p>However when the site is sized to a single column in responsive view, these paragraphs automatically flow in a single column</p>
+				<p>Dachis Group created this suite of metrics for businesses to quanitfy their brand's social imprint.</p>
+				<p>These graphs, charts and other data visualizations were built with Javascript and the HTML5 Canvas element to analyze real-time data and display the results on a variety of devices.</p>
 				
-				<p class="link"><a href="http://www.google.com/" target="_blank">Preview the site</a></p>
+				<p class="link"><a href="http://www.socialbusinessindex.com/" target="_blank">Preview the site</a></p>
 			</description>
-			<info type="Client:">A Great Client</info>
-			<info type="Agency:">A Helpful Agency</info>
-			<info type="Technology:">Many languages. Edit the 'type' value to anything you want</info>
+			<info type="Client:">Dachis Group</info>
+			<info type="Agency:">bond art + science</info>
+			<info type="Technology:">Javascript, Canvas, HTML5</info>
 		</item>
-		<item color="#FF0000">
+		
+		<item color="#EF7E7C">
 			<images>
-				<img src="content/sample2/Sample2_Image1.png"/>
-				<img src="content/sample2/Sample2_Image2.png"/>
-				<img src="content/sample2/Sample2_Image3.png"/>
-				<img src="content/sample2/Sample2_Image4.png"/>
+				<img src="content/dltxii/DLTXII_GALLERY.jpg"/>
+				<img src="content/dltxii/DLTXII_GALLERY_MOBILE.jpg"/>
+				<img src="content/dltxii/DLTXII_GALLERY_MOBILE_2.jpg"/>
 			</images>
-			<title>Project Title</title>
-			<summary>Project Summary</summary>
+			<title>Douglas Lyle Thompson</title>
+			<summary>Portfolio of photography</summary>
 			<description>
-				<p>Paragraphs are split between two columns automatically, to keep shorter line lengths, which are easier to read.</p>
-				<p>However when the site is sized to a single column in responsive view, these paragraphs automatically flow in a single column</p>
-				
-				<p class="link"><a href="http://www.google.com/" target="_blank">Preview the site</a></p>
+				<p>You've seen his photographs in the New York Times, Wallpaper*, and ads for Google, Puma and the Ace Hotel.</p>
+				<p>Douglas wanted a site that could flexibly and minimally showcase and archive his work.</p>
+				<p>This responsive site was coded for desktop, tablet and phone viewing.</p>
+				<p>The source is also available for download in the <a onclick="WORKSHOP.site.MAIN.launchSection('CODE')">Code</a> section.</p>
+				<p class="link"><a href="http://www.douglaslylethompson.com/" target="_blank">View the site</a></p>
 			</description>
-			<info type="Client:">A Great Client</info>
-			<info type="Agency:">A Helpful Agency</info>
-			<info type="Amazin Coworkers:">Edit the 'type' value to anything you want</info>
+			<info type="Client:">Douglas Lyle Thompson</info>
+			<info type="Technology:">Javascript, CSS, HTML5</info>
+		</item>
+		<item color="#f35b12">
+			<images>
+				<img src="content/sp/SP_PERSONALITY_01.jpg"/>
+				<img src="content/sp/SP_PERSONALITY_02.jpg"/>
+				<img src="content/sp/SP_PERSONALITY_03.jpg"/>
+				<img src="content/sp/SP_PERSONALITY_04.jpg"/>
+			</images>
+			<title>Signal Patterns</title>
+			<summary>Visualization of personality survey results</summary>
+			<description>
+				<p>A few ex-IBM braniacs got together and built a survey system backend which allows users to answer a few questions and learn a bit more about themselves.</p>
+				<p>The results of each individual's survey is displayed visually with interactive graphs. These graphs not only display results but act as a tool to dig deeper into the data.</p>
+				<p class="link"><a href="content/sp/" target="_blank">View a sample visualization</a></p>
+			</description>
+			<info type="Client:">Signal Patterns</info>
+			<info type="Agency:">bond art + science</info>
+			<info type="Technology:">Actionscript</info>
+		</item>
+		
+		<item color="#76a624"> 
+			<images>
+				<img src="content/kv/KinValley_00.jpg"/>
+				<img src="content/kv/KinValley_01.jpg"/>
+				<img src="content/kv/KinValley_02.jpg"/>
+				<img src="content/kv/KinValley_03.jpg"/>
+				<img src="content/kv/KinValley_04.jpg"/>
+				<img src="content/kv/KinValley_05.jpg"/>
+				<img src="content/kv/KinValley_06.jpg"/>
+				<img src="content/kv/KinValley_07a.jpg"/>
+				<img src="content/kv/KinValley_07b.jpg"/>
+				<img src="content/kv/KinValley_07c.jpg"/>
+				<img src="content/kv/KinValley_08.jpg"/>
+				<img src="content/kv/KinValley_09.jpg"/>
+			</images>
+			<title>Kin Valley</title>
+			<summary>Safe communication platform for families</summary>
+			<description>
+				<p>A platform where parents and children can send messages, video chat, play games, share photos, customize their houses, and so much more. </p>
+				<p>Under the hood, all communication is governed by a permissions- and capabilities-based security system.</p>
+				<p>This operating system-sized application is built on a custom MVC framework, draws every view and asset dynamically with vectors and color palettes, and is deployed from the same code base to the web and tablets.</p>
+				<p>Kin Valley is a model for wide-scale application architecture and continues to grow as an extensible platform.</p>
+				<p class="link"><a href="https://itunes.apple.com/us/app/kin-valley-for-ipad/id572226189" target="_blank">Download the app from iTunes</a></p>
+			</description>
+			<info type="Client:">Kin Valley LLC</info>
+			<info type="Technology:">Actionscript and Javascript for web and iPad deployment</info>
+		</item>
+		
+		<item color="#409ef7"> 
+			<images>
+				<img src="content/ultrastar/MEDIA_SATELLITE_01.jpg"/>
+				<img src="content/ultrastar/MEDIA_SATELLITE_02.jpg"/>
+				<img src="content/ultrastar/MEDIA_SATELLITE_03.jpg"/>
+			</images>
+			<title>Media Satellite</title>
+			<summary> Compact omni-media player</summary>
+			<description>
+				<p>This media player was built to contain audio, photos and video in any combination and quantity possible.</p>
+				<p>The Media Satellite lived on a centralized server but was deployed across properties on the web, being styled at runtime with CSS. The data feeds were served from property-specific databases as well.</p>
+				<p>This was easily the most flexible, data-rich, and widely deployed application I'd built while conversely also being the most densly designed user interface.</p>
+				<p><i>project offline</i></p>
+			</description>
+			<info type="Client:">Various Artists</info>
+			<info type="Agency:">Ultrastar Entertainment</info>
+			<info type="Technology:">Actionscript and Javascript</info>
+		</item>
+		<item color="#16a796"> 
+			<images>
+				<img src="content/mslo/MarthaStewart_01.jpg"/>
+				<img src="content/mslo/MarthaStewart_02.jpg"/>
+			</images>
+			<title>Martha Stewart</title>
+			<summary>Site v2.0 media suite</summary>
+			<description>
+				<p>Skinnable and resizable media elements including video players, content leaders, a typography library and more.</p>
+				<p>These elements could be interacted with through Adobe Flash or through a Javascript integration layer, which exposed all core functionality and playback events to the web page.</p>
+				<p>These elements were created prior to the introduction of the HTML5 &lt;video&gt;  tag but introduced the same level media flexibilty that we find common to web pages today.</p>
+			</description>
+			<info type="Client:">Martha Stewart Living Omnimedia</info>
+			<info type="Technology:">Actionscript and Javascript</info>
+		</item>
+		
+		<item color="#eb0005"> 
+			<images>
+				<img src="content/other/Raphael_01.png"/>
+				<img src="content/other/RollingStones_02.png"/>				
+				<img src="content/other/BlowUp.jpg"/>
+				<img src="content/other/Joost_01.jpg"/>				
+				<img src="content/other/BikeMap.png"/>
+				<img src="content/other/Discover_CardMatch_01.jpg"/>
+				<img src="content/other/Discover_CardMatch_02.jpg"/>
+				<img src="content/other/RobertoStudios_01.jpg"/>
+				<img src="content/other/Genesis_01.jpg"/>
+				<img src="content/other/Genesis_02.jpg"/>
+				<img src="content/other/DPhoto_01.jpg"/>
+				<img src="content/other/CountingCrows_01.jpg"/>
+				<img src="content/other/TheWho_SqueezeBox.jpg"/>
+				<img src="content/other/ClubMonaco.jpg"/>
+				<img src="content/other/RollingStones_03.jpg"/>				
+			</images>
+			<title>Other selected projects</title>
+			<summary>Over a decade of building for the web</summary>
+			<description>
+				<p>A sampling from "literally" <i>billions</i> of other projects. More navs, media players, web applications, data visualizations, photo suites and landing pages than you can imagine. </p>
+				<p>The repetition of developing similar applications over and over again is a great way to build experience in application architecture, generic coding practices, and file optimization. </p>
+			</description>
+			<info type="Client:">Various</info>
+			<info type="Technology:">Actionscript, Javascript, CSS, SVG, Design, ...</info>
 		</item>		
+		
+		<item color="#3f124e"> 
+			<images>
+				<img src="content/mb/MB_Title.jpg"/>
+				<img src="content/mb/MB_PolarArea.png"/>
+				<img src="content/mb/MB_SiWave.jpg"/>
+				<img src="content/mb/MB_LetItGo.jpg"/>				
+				<img src="content/mb/MB_AudioKonsol.jpg"/>
+				<img src="content/mb/MB_Hexa.png"/>
+				<img src="content/mb/MB_HotAir.jpg"/>
+				<img src="content/mb/MB_NightWatch.png"/>
+				<img src="content/mb/MB_sssup.png"/>
+			</images>
+			<title>Mechanical-Bull.com</title>
+			<summary>Programing and visual woodshedding</summary>
+			<description>
+				<p>A place once used to program freely without any consequence of reality.</p>
+				<p>Good times.</p>
+				<p class="link"><a href="http://mechanical-bull.com/" target="_blank">mechanical-bull.com</a></p>
+			</description>
+			<info type="Skills:">Actionscript, Geometry, Trigonometry, Design, Color, Patience, Interest, Wonder</info>
+		</item>
+		
 	</WORK>
 	
-	<ABOUT label="About" application="">
+	<ABOUT label="About" application=""  visualization="vis/PerlinBlocks.js">
 		<title color="#0099FF">Well Hello There</title>
 		<body>
 			<![CDATA[
-				<p>Talk about yourself a little bit</p>
-				<p>You can use HTML in here. It is an alternative to loading a .js file for a section. Name it whatever you want by changing the label attribute in the main node above</p>
-				<p>See how the application attribute is empty? That is how the Site knows to use this HTML instead.</p>
+				<p>My name is Jon and I program visual interfaces and quantitative displays of information for the web. 
+					<br/>I write web applications, data visualizations, and full-scale websites.
+				</p>
+				
+				<p>I'm interested in language syntax. 
+					<br/>I've embraced math for all of its beauty, power and brevity. 
+					My visual programming interests lie in geometry, trigonometry, color manipulation, filesize and processor/memory efficiency, application architecture and extensibility, and of course, data wrangling.</p>
+				<!--<p>Javascript, HTML5, CSS, SCSS, SVG, ActionScript</p>-->
+				<p>I write code, consult, and even build teams tailored to a specific project's needs.</p>
+				<p>I like to talk to people! 
+				<a onclick="WORKSHOP.site.MAIN.launchSection('CONTACT')">Send me an email</a> if you are looking for a developer for your projects, or simply to say hello.</p>
+				<p>
+					<a href="http://www.twitter.com/leubrich" target="_blank" style="background:none;"><img src="images/twitter_icon.png" border="0"/></a>
+					<a href="https://github.com/jonathangreacen" target="_blank" style="background:none;"><img src="images/github_icon.png" border="0"/></a>
+				</p>
 			]]>
 		</body>
 	</ABOUT>
 	
-	<CODE label="Code" application="">
+	<CODE label="Code" application=""  visualization="vis/Brownian.js">
 		<title color="#333333">Git Your Code Here</title>
 		<body>
 			<![CDATA[
-				<p>You write great code, someone wants to talk to you!, this is how you make a link to another site section:
-						<a onclick="WORKSHOP.site.MAIN.launchSection('CONTACT')">Contact me</a>
-				</p>
-				
-				<p>If you want to make a normal link, just make a normal link: <a href="http://www.google.com">Click Me</a> </p>
+				<p>I've made two full projects available to clone/fork/branch on <a href="https://github.com/jonathangreacen?tab=repositories">GitHub</a>. While it is often hard to post code from client work publicly, I've made this entire portfolio application as well as Douglas Thompson's photo gallery available in their entirety.</p>
+				<article>
+					<p>
+						<strong>Source for this Site</strong><br/>
+						If you've viewed the source of this site, you already know it's a bit ridiculous. One script tag pointing to a Javascript application. It wasn't my original intention to build the site this way, but after writing the display of projects, I asked myself <i>I wonder what happens if I </i><span class="code">document.createElement('html')</span>?</p>
+					<p>
+						Well I learned a lot about how malleable and impermanent the DOM can be. It also reminded me how, when building something solely for yourself, you can make any decisions you want, no matter how ridiculous the results.<br/>That is a joy of development: <i>process rules</i>.
+					</p>
+					
+					<p>
+						Anyway, get the source here and have fun with it. <br/>
+						<a href="https://github.com/jonathangreacen/Portfolio" target="_blank">https://github.com/jonathangreacen/Portfolio</a>
+					</p>
+				</article>
+				<article>
+					<p>
+						<strong>Source for the Thompson Gallery</strong><br/>
+						The gallery is an easy codebase to set free because of its minimal display and straightforward UI functionality. While the gallery wasn't intended originally to be deployed for various uses, it should not require much tailoring to get it to do what you need.
+					</p>
+					<p>
+						You can use it as a stand-alone portfolio or in an existing site as a photo gallery.  The gallery requires no page refreshes so it should be easy to integrate into your work. Or just skin it with CSS, pop in your own photos, and call it a day.
+					</p>
+					<p>
+						The photo gallery source is available here:<br/>
+						<a href="https://github.com/jonathangreacen/Gallery" target="_blank">https://github.com/jonathangreacen/Gallery</a>
+					</p>
+					<p>And a demo of the code here:<br/>
+						<a href="http://gallery.workshopdevelopment.com/" target="_blank">http://gallery.workshopdevelopment.com</a>
+					</p>
+				</article>
+					
+					<p class="link">
+						<br/>
+						<a onclick="WORKSHOP.site.MAIN.launchSection('CONTACT')">Contact me</a> with any feedback you have. If you have ideas or want to keep the development of these projects going, well that's exactly what GitHub is for. I welcome all of your comments!
+					</p>
 				
 			]]>
 		</body>
 	</CODE>
 	
-	<CONTACT label="Contact"  application="js/WorkshopContact.js">
-		<title color="#999999">Contact me</title>
+	<CONTACT label="Contact"  application="js/WorkshopContact.js" visualization="vis/ColorGrade.js">
+		<title color="#999999">Say Hello</title>
 		<config>
 			<body>I like to talk to people! What's better than hearing from someone new? Send me an email to say hi or talk some code.</body>
 			<contactName>Jonathan Greacen</contactName>

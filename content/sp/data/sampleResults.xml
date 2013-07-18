@@ -1,0 +1,58 @@
+<people>
+<person uid="escs_1409">
+<factors>
+  <factor id="1" value="4.2778" /> 
+  <factor id="2" value="4.3611" /> 
+  <factor id="3" value="3.6944" /> 
+  <factor id="4" value="4.5"/> 
+  <factor id="5" value="3.4444" /> 
+</factors>
+<facets>
+  <facet value="4.75" facet_id="1" /> 
+  <facet value="5" facet_id="2" /> 
+  <facet value="2.75" facet_id="3" /> 
+  <facet value="4" facet_id="4" /> 
+  <facet value="4.25" facet_id="5" /> 
+  <facet value="5" facet_id="6" /> 
+  <facet value="4.5" facet_id="7" /> 
+  <facet value="4.25" facet_id="8" /> 
+  <facet value="4.75" facet_id="9" /> 
+  <facet value="4.5" facet_id="10" /> 
+  <facet value="5" facet_id="11" /> 
+  <facet value="5" facet_id="12" /> 
+  <facet value="4" facet_id="13" /> 
+  <facet value="4" facet_id="14" /> 
+  <facet value="4.5" facet_id="15" /> 
+  <facet value="4.25" facet_id="16" /> 
+  <facet value="4" facet_id="17" /> 
+  <facet value="3" facet_id="18" /> 
+  <facet value="4.5" facet_id="19" /> 
+  <facet value="4" facet_id="20" /> 
+  <facet value="3.5" facet_id="21" /> 
+  <facet value="4.25" facet_id="22" /> 
+  <facet value="3.25" facet_id="23" /> 
+  <facet value="3.75" facet_id="24" /> 
+  <facet value="3.75" facet_id="25" /> 
+  <facet value="2.5" facet_id="26" /> 
+  <facet value="3" facet_id="27" /> 
+  <facet value="3.75" facet_id="28" /> 
+  <facet value="4" facet_id="29" /> 
+  <facet value="3.25" facet_id="30" /> 
+  <facet value="2.75" facet_id="31" /> 
+  <facet value="3.5" facet_id="32" /> 
+  <facet value="2.5" facet_id="33" /> 
+  <facet value="4.5" facet_id="34" /> 
+  <facet value="4" facet_id="35" /> 
+  <facet value="4.75" facet_id="36" /> 
+  <facet value="2.75" facet_id="37" /> 
+  <facet value="3.25" facet_id="38" /> 
+  <facet value="2.75" facet_id="39" /> 
+  <facet value="4" facet_id="40" /> 
+  <facet value="2.5" facet_id="41" /> 
+  <facet value="3.75" facet_id="42" /> 
+  <facet value="3.25" facet_id="43" /> 
+  <facet value="3" facet_id="44" /> 
+  <facet value="3.75" facet_id="45" /> 
+</facets>
+</person>
+</people>

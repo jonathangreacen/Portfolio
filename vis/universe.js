@@ -13,7 +13,7 @@ WORKSHOP.site.vis.LOGARITHMIC_UNIVERSE = (function LogarithmicUniverse(){
 		running,
 		arrow_data,
 		loader,
-		arrows,
+		arrows = [],
 		me = {};
 		
 	me.init = function(_c){
@@ -21,6 +21,7 @@ WORKSHOP.site.vis.LOGARITHMIC_UNIVERSE = (function LogarithmicUniverse(){
 		ctx = canvas.getContext('2d');
 		width = canvas.width;
 		height = canvas.height;
+		canvas.style.backgroundColor = '#F2FEF1';
 		dim = 1000;
 		dim_log = Math.log(dim);
 		running = false;
@@ -33,7 +34,7 @@ WORKSHOP.site.vis.LOGARITHMIC_UNIVERSE = (function LogarithmicUniverse(){
 		arrow_data.src = 'images/arrow_3.png';
 	};
 	function onArrowDataLoaded(e){
-		arrow_data.onload = null;
+		if(arrow_data) arrow_data.onload = null;
 		(window['addEventListener']) ? window.addEventListener('resize', resetCanvasHeight, false) : window.attachEvent('onresize', resetCanvasHeight);
 		launchArrows();
 		update();
@@ -130,6 +131,7 @@ WORKSHOP.site.vis.LOGARITHMIC_UNIVERSE = (function LogarithmicUniverse(){
 		clearInterval(launchTimer);
 		clearInterval(releaseTimer);
 		if(canvas) canvas.onclick = null;
+		(window['removeEventListener']) ? window.removeEventListener('resize', resetCanvasHeight, false) : window.detachEvent('onresize', resetCanvasHeight);
 	};
 	me.destroy = destroy;
 	function Arrow(){
@@ -149,7 +151,6 @@ WORKSHOP.site.vis.LOGARITHMIC_UNIVERSE = (function LogarithmicUniverse(){
 			this.vy = (Math.sin(this.rotation) * this.speed) * this.power;
 		};
 	};
-	
 	WORKSHOP.site.vis.NEWEST_LOADED_VISUALIZATION = me;
 	return me;
 })();

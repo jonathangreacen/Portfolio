@@ -6,6 +6,7 @@ WORKSHOP.site.sections.WORK = (function (UTILS, _doc, _win){
 		currentFocusedProject,
 		initialized = false,
 		slideshows = [];//for pause/restarting as a user scrolls a project into view
+
 	me.name = 'PORTFOLIO';
 		
 	function init(){
@@ -20,7 +21,7 @@ WORKSHOP.site.sections.WORK = (function (UTILS, _doc, _win){
 		var projects = content.getElementsByTagName('item'),
 			i = 0,
 			t = projects.length,
-			section = _doc.getElementsByTagName('section')[0],
+			section = document.getElementsByTagName('section')[0],
 			serializer = (typeof _win.XMLSerializer != "undefined") ? new XMLSerializer() : null,
 			buildHTMLElement = UTILS.buildHTMLElement;
 			
@@ -71,13 +72,13 @@ WORKSHOP.site.sections.WORK = (function (UTILS, _doc, _win){
 			for(j=0; j<l; j++){
 				infoItem = infoCouplets[j];
 				infoCouplet = buildHTMLElement('div', {class:'infoCouplet'}, infoContainer);
-				infoTitle = _doc.createElement('h5');
-				infoTitle.appendChild(_doc.createTextNode(infoItem.attributes.getNamedItem('type').value + " "));
+				infoTitle = document.createElement('h5');
+				infoTitle.appendChild(document.createTextNode(infoItem.attributes.getNamedItem('type').value + " "));
 				infoCouplet.appendChild(infoTitle);
-				infoCouplet.appendChild(_doc.createTextNode(' ' + infoItem.firstChild.data));
+				infoCouplet.appendChild(document.createTextNode(' ' + infoItem.firstChild.data));
 			}
 			
-			// Create a slideshow object for each group of images. Slideshow object is defined at the bottom of this file
+			// Images
 			if(imagePaths.length > 0){
 				var slideshow = new Slideshow(imagePaths);
 					slideshow.init();
@@ -96,10 +97,10 @@ WORKSHOP.site.sections.WORK = (function (UTILS, _doc, _win){
 			midPoint = _win.innerHeight / 2,
 			_winY = pageY || _win.pageYOffset;
 			
-		for(; i<t; i++){
+		for(i; i<t; i++){
 			project = projects[i];
 			projectY = project.offsetTop;			
-			if(currentFocusedProject !== project && midPoint > projectY - _winY && midPoint < projectY + parseInt(project.offsetHeight) - _winY){
+			if(currentFocusedProject !== project && midPoint > projectY - _winY && midPoint < projectY + parseInt(project.offsetHeight, 10) - _winY){
 				if(currentFocusedProject) {
 					unhilightCurrentProject(projects);
 				}
@@ -142,7 +143,6 @@ WORKSHOP.site.sections.WORK = (function (UTILS, _doc, _win){
 	};
 	
 	
-	
 	// Helper Slideshow object
 	function Slideshow(_images){
 		this.frontImage;
@@ -158,17 +158,17 @@ WORKSHOP.site.sections.WORK = (function (UTILS, _doc, _win){
 	};
 	Slideshow.prototype = {
 		DELAY:2750,
-		useTimeout:false,
+		useTimeout:true,
 		init:function(){
 			if(!this.initialized){
 				this.index = 0;
 				this.frontImage = new Image();
 				this.frontImage.style.opacity = 0;
-				this.frontImage.onload = this.onNewImageLoaded.bind(this);
+				this.frontImage.addEventListener("load", this.onNewImageLoaded.bind(this));
 				
 				this.backImage = new Image();
-				this.backImage.onload = this.onBackImageLoaded.bind(this);
-				
+				this.backImage.addEventListener("load", this.onBackImageLoaded.bind(this));
+
 				this.initialized = true;
 				this.showFirstImage();
 			}
@@ -181,8 +181,9 @@ WORKSHOP.site.sections.WORK = (function (UTILS, _doc, _win){
 			}
 		},
 		run:function(){
+			this.frontImage.style.opacity = 0;
 			this.running = true;
-		//	this.loadNextImage()
+			this.loadNextImage();
 			this.initializeTimer();
 		},
 		initializeTimer:function(){
@@ -192,15 +193,16 @@ WORKSHOP.site.sections.WORK = (function (UTILS, _doc, _win){
 			}else{
 				clearInterval(this.timer);
 				this.timer = setInterval(this.copyFrontImageToBack.bind(this), this.DELAY);
-			}		
+			}
 		},
 		pause:function(){
 			this.running = false;
 			clearInterval(this.timer);
+			clearTimeout(this.timer);
 			this.timer = false;
 		},
 		copyFrontImageToBack:function(){
-			if(this.frontImage && this.frontImage.src != ''){ 				
+			if(this.frontImage && this.frontImage.src != ''){ 
 				this.backImage.src = this.frontImage.src;
 			}
 		},
@@ -241,4 +243,4 @@ WORKSHOP.site.sections.WORK = (function (UTILS, _doc, _win){
 	init();		// auto initialize
 	return me;
 	
-}(WORKSHOP.utils.CORE, document, window));
+})(WORKSHOP.utils.CORE, document, window);

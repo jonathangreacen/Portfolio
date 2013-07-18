@@ -1,0 +1,62 @@
+<html>
+	<head>
+		<style>
+			html,body{
+				width:100%;
+				height:100%;
+				margin:0px;
+				padding:0px;
+			}
+		</style>
+		<script type="text/javascript" src="Drawing.js"></script>
+		<script type="text/javascript">
+			var canvas,context,colors,rows,cols,w,h,animationID,endpoints,drawing;
+			
+			function init(){
+				canvas = document.getElementById('myCanvas');
+				canvas.width = 161;
+				canvas.height = document.height;
+				context = canvas.getContext('2d');
+				rows = 250;
+				cols = 30;
+				w = canvas.width / cols;
+				h = canvas.height / rows;
+				drawing = WORKSHOP.utils.DRAWING;
+				console.log(drawing.colorGrade(0x80B6CC, 0xD22B0D, 255));
+				if(!colors){
+					endpoints = [0x80B6CC, 0xD22B0D, 0x111111,0xFFFFFF];
+					colors = drawing.colorGrade(endpoints[0], endpoints[1], rows + cols);
+					colors = drawing.colorGrade(endpoints[1], endpoints[2], rows + cols, colors);
+					colors = drawing.colorGrade(endpoints[2], endpoints[3], rows + cols, colors);
+					colors = drawing.colorGrade(endpoints[3], endpoints[2], rows + cols, colors);
+					colors = drawing.colorGrade(endpoints[2], endpoints[1], rows + cols, colors);
+					colors = drawing.colorGrade(endpoints[1], endpoints[0], rows + cols, colors);
+				}
+				animationID = setInterval(draw, 75);
+			};
+			function draw(){				
+				var i, j, x, y,
+					color;					
+					context.strokeStyle = 'rgba(255,255,255,.08)';
+				for(i=0; i<cols; i++){		
+					x = i * w;
+					for(j=0; j<rows; j++){
+						y = j * h;
+						color = '#' + colors[i + j].toString(16);
+						context.fillStyle = color;
+						context.beginPath();
+						context.rect(x, y, w, h);
+						context.closePath();
+					//	context.stroke();
+						context.fill();
+					}
+				}
+				//colors.push( colors.shift() );
+				colors.unshift( colors.pop() );
+			};
+		</script>
+	</head>
+	<body onload="init()">
+		<canvas id="myCanvas" width="1000" height="1000"></canvas>
+	</body>
+</html>

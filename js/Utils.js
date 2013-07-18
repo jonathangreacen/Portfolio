@@ -263,4 +263,4 @@ WORKSHOP.utils.CORE = (function(obj, _doc, _win){
 			};
 	}());
 	return me;
-}(WORKSHOP.utils.CORE || {}, document, window));////(WORKSHOP.utils.CORE || {}));
+})(WORKSHOP.utils.CORE || {}, document, window);
