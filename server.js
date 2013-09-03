@@ -7,16 +7,13 @@ var http = require('http'),
 	path = require('path'),
 	numRequests = 0;
 	
-http.createServer(function (request, response) {
- 
-    console.log('request ' + numRequests++);
-     
+http.createServer(function (request, response) {     
     var filePath = '.' + request.url;
     if (filePath == './')
         filePath = 'index.html';
          
-    var extname = path.extname(filePath);
-    var contentType = 'text/html';
+    var extname = path.extname(filePath),
+        contentType = 'text/html';
     switch (extname) {
         case '.js':
             contentType = 'text/javascript';
@@ -27,7 +24,7 @@ http.createServer(function (request, response) {
     }
      
     path.exists(filePath, function(exists) {
-     console.log("FilePath:", filePath);
+    console.log("FilePath:", filePath);
         if (exists) {
             fs.readFile(filePath, function(error, content) {
                 if (error) {
@@ -46,4 +43,4 @@ http.createServer(function (request, response) {
         }
     });
      
-}).listen(8125);
+}).listen(8000);

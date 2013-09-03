@@ -41,9 +41,9 @@ html, body{
 }
 #site{
 	width:$content_width + $graphic_trench_width + $content_margin_left;
-	a, p, h3, h4, h5, h6, strong, i, .code{
-		::-moz-selection {background:#FFFFCC; color:#333;}
-		::selection{background:#FFFFCC; color:#333;}
+	a, p, h3, h4, h5, h6, strong, i, .code, .info{
+		&::-moz-selection {background:#FFFFCC; color:#333;}
+		&::selection{background:#FFFFCC; color:#333;}
 	}
 	height:100%;
 }
@@ -332,8 +332,8 @@ input, textarea{
 $graphic_trench_width_small:0px;
 $nav_mobile_height:75px;
 /* Narrow browsers and iphone */
-@media only screen and (max-width:666px), only screen and (-webkit-min-device-pixel-ratio : 1.5),
-only screen and (min-device-pixel-ratio : 1.5) {
+@media only screen and (max-width:666px)/*, only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5)*/ {
 	#site{
 		width:100%;
 		min-width:565px;

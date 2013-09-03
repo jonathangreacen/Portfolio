@@ -100,7 +100,7 @@
 				<p>Under the hood, all communication is governed by a permissions- and capabilities-based security system.</p>
 				<p>This operating system-sized application is built on a custom MVC framework, draws every view and asset dynamically with vectors and color palettes, and is deployed from the same code base to the web and tablets.</p>
 				<p>Kin Valley is a model for wide-scale application architecture and continues to grow as an extensible platform.</p>
-				<p class="link"><a href="https://itunes.apple.com/us/app/kin-valley-for-ipad/id572226189" target="_blank">Download the app from iTunes</a></p>
+				<!--<p class="link"><a href="https://itunes.apple.com/us/app/kin-valley-for-ipad/id572226189" target="_blank">Download the app from iTunes</a></p>-->
 			</description>
 			<info type="Client:">Kin Valley LLC</info>
 			<info type="Technology:">Actionscript and Javascript for web and iPad deployment</info>
@@ -216,7 +216,7 @@
 	</ABOUT>
 	
 	<CODE label="Code" application=""  visualization="vis/Brownian.js">
-		<title color="#333333">Git Your Code Here</title>
+		<title color="#0099FF">Git Your Code Here</title>
 		<body>
 			<![CDATA[
 				<p>I've made two full projects available to clone/fork/branch on <a href="https://github.com/jonathangreacen?tab=repositories">GitHub</a>. While it is often hard to post code from client work publicly, I've made this entire portfolio application as well as Douglas Thompson's photo gallery available in their entirety.</p>
@@ -260,7 +260,7 @@
 	</CODE>
 	
 	<CONTACT label="Contact"  application="js/WorkshopContact.js" visualization="vis/ColorGrade.js">
-		<title color="#999999">Say Hello</title>
+		<title color="#0099FF">Say Hello</title>
 		<config>
 			<body>I like to talk to people! What's better than hearing from someone new? Send me an email to say hi or talk some code.</body>
 			<contactName>Jonathan Greacen</contactName>

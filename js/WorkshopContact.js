@@ -39,7 +39,7 @@ WORKSHOP.site.sections.CONTACT = (function (UTILS, _doc, _win){
 			buildHTMLElement = UTILS.buildHTMLElement,
 			article = buildHTMLElement('article', {id:'Contact'}, section),
 			hgroup = buildHTMLElement('div', {class:'hgroup'}, article),
-			titleContainer = buildHTMLElement('h3', {class:'title',style:"color:#999999"}, hgroup, title),
+			titleContainer = buildHTMLElement('h3', {class:'title',style:"color:#0099FF"}, hgroup, title),
 			sectionBody = buildHTMLElement('div', {class:'sectionBody'}, article),
 			p, br, p2;
 		p = buildHTMLElement('p', null, sectionBody, sectionBody_str);
