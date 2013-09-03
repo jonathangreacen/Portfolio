@@ -209,9 +209,9 @@ WORKSHOP.site.MAIN = (function(doc,win){
 				section = section.toLowerCase();
 				url = url || currentSection;
 				try{
-			//		history.pushState({id:section}, document.title, section);
+					history.pushState({id:section}, document.title, section);
 				}catch(error){
-			//		window.location.hash = "#/" + section;
+					window.location.hash = "#/" + section;
 				}
 			};
 			function clearCurrentSection(){	
